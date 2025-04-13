@@ -10,9 +10,10 @@ export default {
     },
     extend: {
       animation: {
-        scroll: "scroll 15s linear infinite",
+        scroll: "scroll 25s linear infinite",
         'move-up-down': 'moveUpDown 2s infinite',
       },
+      
       screens: {
         '2xl': '1920px',
       },

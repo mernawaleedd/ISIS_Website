@@ -29,8 +29,6 @@ const Navbar = () => {
       }`}
     >
       <img src={logo} alt="Logo" className="w-16 h-16 mt-2 object-contain" />
-      
-      {/* Mobile Menu Button */}
       <div
         className="md:hidden text-[#0E2F40] text-3xl cursor-pointer"
         onClick={toggleMenu}
@@ -92,12 +90,10 @@ const Navbar = () => {
         </li>
       </ul>
 
-      {/* Contact Us Button */}
       <button className="hidden md:block px-4 py-2 bg-[#24698f] text-white rounded-3xl hover:bg-[#0E2F40] transition">
         Contact Us
       </button>
 
-      {/* Mobile Dropdown Menu */}
       {isMenuOpen && (
         <ul className="absolute top-full left-0 w-full bg-white flex flex-col items-center py-4 shadow-md md:hidden">
           <li>

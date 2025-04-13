@@ -3,6 +3,7 @@ import Layout from './Pages/Layout';
 import HomePage from "./Pages/HomePage";
 import AboutUs from './Pages/AboutUs';
 import Services from './Pages/Services';
+import Projects from './Pages/Projects';
 function App() {
   return (
     <BrowserRouter>
@@ -11,7 +12,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="about" element={<AboutUs />} />
           <Route path="services" element={<Services />} />
-          {/* <Route path="contact" element={<Contact />} /> */}
+          <Route path="projects" element={<Projects />} />
         </Route>
       </Routes>
     </BrowserRouter>

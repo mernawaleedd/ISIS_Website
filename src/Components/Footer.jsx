@@ -1,23 +1,70 @@
 import React from 'react';
-import { FaFacebook, FaLinkedin } from 'react-icons/fa';
-import linkedIn from '../assets/images/LinkedIn.png';
-import facebook from '../assets/images/Facebook.png';
-
+import { NavLink } from 'react-router-dom';
+import facebook from "../assets/images/facebook.png";
+import linkedIn from "../assets/images/linkedIn.png";
 const Footer = () => {
   return (
-    <footer className="bg-[#F6F6F6] py-8 px-4 md:px-16">
+    <footer className="bg-[#F6F6F6] pt-8 px-4 md:px-16">
+      {/* Top part with Links */}
       <div className="flex flex-col md:flex-row justify-between items-start mb-8 space-y-6 md:space-y-0">
+        {/* Explore */}
         <div>
           <h3 className="font-semibold mb-4 text-[#0E2F40]">Explore</h3>
           <ul className="space-y-2 text-[#5E5E5E]">
-            <li>Home</li>
-            <li>About I.S.I.S</li>
-            <li>Services</li>
-            <li>Projects</li>
-            <li>News</li>
+            <li>
+              <NavLink 
+                to="/" 
+                className={({ isActive }) => 
+                  isActive ? 'text-[#0E2F40] font-semibold' : 'hover:text-[#0E2F40]'
+                }
+              >
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink 
+                to="/about" 
+                className={({ isActive }) => 
+                  isActive ? 'text-[#0E2F40] font-semibold' : 'hover:text-[#0E2F40]'
+                }
+              >
+                About I.S.I.S
+              </NavLink>
+            </li>
+            <li>
+              <NavLink 
+                to="/services" 
+                className={({ isActive }) => 
+                  isActive ? 'text-[#0E2F40] font-semibold' : 'hover:text-[#0E2F40]'
+                }
+              >
+                Services
+              </NavLink>
+            </li>
+            <li>
+              <NavLink 
+                to="/projects" 
+                className={({ isActive }) => 
+                  isActive ? 'text-[#0E2F40] font-semibold' : 'hover:text-[#0E2F40]'
+                }
+              >
+                Projects
+              </NavLink>
+            </li>
+            <li>
+              <NavLink 
+                to="/news" 
+                className={({ isActive }) => 
+                  isActive ? 'text-[#0E2F40] font-semibold' : 'hover:text-[#0E2F40]'
+                }
+              >
+                News
+              </NavLink>
+            </li>
           </ul>
         </div>
 
+        {/* Services */}
         <div>
           <h3 className="font-semibold mb-4 text-[#0E2F40]">Services</h3>
           <ul className="space-y-2 text-[#5E5E5E]">
@@ -29,6 +76,7 @@ const Footer = () => {
           </ul>
         </div>
 
+        {/* Contact Us */}
         <div>
           <h3 className="font-semibold mb-4 text-[#0E2F40]">Contact Us</h3>
           <ul className="space-y-2 text-[#5E5E5E]">
@@ -40,19 +88,33 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between items-center border-t pt-4 text-sm space-y-4 md:space-y-0">
-        <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-4 text-[#5E5E5E]">
-          <span>Terms And Conditions</span>
-          <span>Privacy Policy</span>
-          <span>Security</span>
+      {/* Social icons */}
+      <div className="flex justify-end mb-4">
+        <div className="flex space-x-4">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <div className="w-12 hover:transition-transform duration-500 transform hover:scale-110">
+            <img src={facebook} alt="facebook" />
+            </div>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <div className="w-12 hover:transition-transform duration-300 transform hover:scale-110">
+              <img src={linkedIn} alt="linkedIn" />
+            </div>
+          </a>
         </div>
+      </div>
 
-        <span className="text-center md:text-left">© 2025 I.S.I.S | All Rights Reserved</span>
+      {/* Bottom line */}
+      <hr className="border-t border-gray-300 mb-6" />
 
-        <div className="flex justify-center space-x-4">
-          <img src={linkedIn} alt="linkedin" className="w-8 h-8 md:w-12 md:h-12" />
-          <img src={facebook} alt="facebook" className="w-8 h-8 md:w-12 md:h-12" />
+      {/* Footer Bottom */}
+      <div className="flex flex-col md:flex-row justify-between items-center text-[#5E5E5E] text-sm pb-6 space-y-4 md:space-y-0">
+        <div className="flex space-x-4">
+          <p>Terms And Conditions</p>
+          <p>Privacy Policy</p>
+          <p>Security</p>
         </div>
+        <p>© 2025 I.S.I.S | All Rights Reserved</p>
       </div>
     </footer>
   );
