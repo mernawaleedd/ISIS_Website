@@ -11,8 +11,8 @@ const AboutImageSection = ({ title, description, image, reverse = false }) => {
         />
       </div>
       <div className="mt-8 md:mt-0 md:w-1/2 md:px-10 text-center md:text-left">
-        <h2 className="text-3xl font-bold text-[#0E2F40] mb-6">{title}</h2>
-        <p className="text-[#5E5E5E] text-lg tracking-widest">{description}</p>
+        <h2 className="text-3xl font-bold text-[#0E2F40] mb-6 capitalize">{title}</h2>
+        <p className="text-[#5E5E5E] text-lg tracking-widest capitalize">{description}</p>
       </div>
     </div>
   );

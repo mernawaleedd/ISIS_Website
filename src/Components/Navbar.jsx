@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink,useNavigate } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import { FiMenu, FiX } from "react-icons/fi";
-
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,6 +19,11 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/contact"); 
+  };
   return (
     <nav
       className={`fixed top-8 left-1/2 transform -translate-x-1/2 h-18 p-16 flex justify-between items-center px-6 py-2 z-20 transition-all duration-300 ${
@@ -90,9 +94,12 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <button className="hidden md:block px-4 py-2 bg-[#24698f] text-white rounded-3xl hover:bg-[#0E2F40] transition">
-        Contact Us
-      </button>
+      <button
+      onClick={handleClick}
+      className="hidden md:block px-4 py-2 bg-[#24698f] text-white rounded-3xl hover:bg-[#0E2F40] transition"
+    >
+      Contact Us
+    </button>
 
       {isMenuOpen && (
         <ul className="absolute top-full left-0 w-full bg-white flex flex-col items-center py-4 shadow-md md:hidden">
@@ -146,9 +153,12 @@ const Navbar = () => {
               News
             </NavLink>
           </li>
-          <button className="px-6 py-3 bg-[#24698F] text-white rounded-3xl transition-none">
-            Contact Us
-          </button>
+          <button
+      onClick={handleClick}
+      className="hidden md:block px-4 py-2 bg-[#24698f] text-white rounded-3xl hover:bg-[#0E2F40] transition"
+    >
+      Contact Us
+    </button>
         </ul>
       )}
     </nav>

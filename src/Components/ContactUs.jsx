@@ -3,7 +3,7 @@ import InputField from "./InputField.jsx";
 import Button from "./MainButton";
 const ContactForm = () => {
     return (
-      <div className="container mx-auto p-6">
+      <div className="container mx-auto p-6 py-16">
    <Description title="Contact" description="   We Prioritize Responding To Your Inquiries Promptly To Ensure You
           Receive The Assistance You Need In A Timely Manner."/>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -12,8 +12,8 @@ const ContactForm = () => {
           <InputField label="Email address" required type="email" placeholder="Enter your email" />
           <InputField label="Phone number" required type="tel" placeholder="Enter your phone number" />
         </div>
-        <InputField label="Your Message" required placeholder="Write your message"className="p-5" />
-        <div className="flex justify-center mt-4">
+        <InputField label="Your Message" required placeholder="Write your message" />
+        <div className="flex justify-center mt-6">
           <Button label="Send" />
         </div>
       </div>
