@@ -22,7 +22,6 @@ const TestimonialSlider = () => {
   const handleDotClick = (index) => {
     setCurrentIndex(index);
   };
-
   return (
     <div className="relative bottom-28 w-full flex justify-center z-10">
       <div className="bg-[#24698F] text-[#ffffff] rounded-2xl p-10 shadow-lg w-3/4 md:w-2/4 flex flex-col items-center text-center h-64">

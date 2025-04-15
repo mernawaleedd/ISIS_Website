@@ -39,6 +39,13 @@ import Plus from "../assets/images/Plus.png";
 import minus from "../assets/images/minus.png";
 import Frequently from "../Components/Frequently";
 function AboutUs() {
+  const tools = [
+    Tool1, Tool2, Tool3, Tool4, Tool6, Tool7, Tool8,
+    Tool9, Tool10, Tool11, Tool12, Tool13, Tool14,
+    Tool15, Tool16, Tool17, Tool18, Tool20, Tool21,
+    Tool22, Tool23, Tool24, Tool25, Tool26
+  ];
+  
   const values = [
     {
       title: "Innovation",
@@ -170,31 +177,17 @@ function AboutUs() {
   <div className="bg-[#ffffff] py-32 p-6">
     <Description title="Technology and tools used in I.S.I.S projects" />
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 container mx-auto p-6">
-      <img src={Tool1} alt="tool" />
-      <img src={Tool2} alt="tool" />
-      <img src={Tool3} alt="tool" />
-      <img src={Tool4} alt="tool" />
-      <img src={Tool6} alt="tool" />
-      <img src={Tool7} alt="tool" />
-      <img src={Tool8} alt="tool" />
-      <img src={Tool9} alt="tool" />
-      <img src={Tool10} alt="tool" />
-      <img src={Tool11} alt="tool" />
-      <img src={Tool12} alt="tool" />
-      <img src={Tool13} alt="tool" />
-      <img src={Tool14} alt="tool" />
-      <img src={Tool15} alt="tool" />
-      <img src={Tool16} alt="tool" />
-      <img src={Tool17} alt="tool" />
-      <img src={Tool18} alt="tool" />
-      <img src={Tool20} alt="tool" />
-      <img src={Tool21} alt="tool" />
-      <img src={Tool22} alt="tool" />
-      <img src={Tool23} alt="tool" />
-      <img src={Tool24} alt="tool" />
-      <img src={Tool25} alt="tool" />
-      <img src={Tool26} alt="tool" />
-    </div>
+  {tools.map((tool, index) => (
+    <img
+      key={index}
+      src={tool}
+      alt={`tool-${index + 1}`}
+      className="transition-transform duration-300 hover:scale-125"
+    />
+  ))}
+</div>
+
+
   </div>
 </div>
 

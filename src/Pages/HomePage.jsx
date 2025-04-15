@@ -1,7 +1,7 @@
 import BgWithAnimation from "../Components/BgWithAnimation";
 import Services from "../Components/Services";
 import Customers from "../Components/Customers";
-import Projects from "../Components/Project";
+import Projects from "../Components/Projects";
 import Statistics from "../Components/Statistics"
 import News from "../Components/News";
 import ContactForm from "../Components/ContactUs";
@@ -12,8 +12,12 @@ export default function Home(){
     <>
     <BgWithAnimation bgImage={background}/>
     <Customers/>
+    <div className="p-16">
     <Services/>
+    </div>
+    <div className="p-16">
     <Projects/>
+    </div>
     <Statistics/>
     <News/>
     <TestimonialSlider/>

@@ -51,7 +51,7 @@ const Services = () => {
                     </div>
                 ))}
             </div>
-            <button className=" mx-auto px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 bg-[#ffffff] text-[#24698F] shadow-lg rounded-3xl hover:bg-[#F6F6F6] transition mt-8 flex items-center justify-center w-max">
+            <button className=" mx-auto px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 bg-[#ffffff] text-[#24698F] shadow-lg rounded-3xl hover:bg-[#F6F6F6] transition mt-16 flex items-center justify-center w-max">
         Learn More
         <img src={Arrow} alt="arrow" className="inline-block ml-2" />
       </button>
