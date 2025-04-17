@@ -35,9 +35,13 @@ import Tool23 from "../assets/images/Tools/tool23.png";
 import Tool24 from "../assets/images/Tools/tool24.png";
 import Tool25 from "../assets/images/Tools/tool25.png";
 import Tool26 from "../assets/images/Tools/tool26.png";
+import Collaboration from "../assets/images/Collaboration.png";
+import agree from "../assets/images/agree.png";
+import Security from "../assets/images/Security.png";
 import Plus from "../assets/images/Plus.png";
 import minus from "../assets/images/minus.png";
 import Frequently from "../Components/Frequently";
+
 function AboutUs() {
   const tools = [
     Tool1, Tool2, Tool3, Tool4, Tool6, Tool7, Tool8,
@@ -73,17 +77,17 @@ function AboutUs() {
     {
       title: "Collaboration",
       description: "Fostering teamwork within our company and strong partnerships with our clients.",
-      icon: AboutCardImage,
+      icon: Collaboration,
     },
     {
       title: "Security",
       description: "Ensuring robust, secure, and high-performance solutions.",
-      icon: AboutCardImage,
+      icon: Security,
     },
     {
       title: "Integrity",
       description: "Conducting business with transparency, ethics, and trust.",
-      icon: AboutCardImage,
+      icon: agree,
     },
   ];
   return (
