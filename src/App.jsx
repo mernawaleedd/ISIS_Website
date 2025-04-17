@@ -20,10 +20,8 @@ function App() {
           <Route path="projects" element={<Projects />} />
           <Route path="news" element={<NewsPage />} />
           <Route path="contact" element={<ContactPage />} />
+          <Route path="projectDetailes" element={<ProjectDetailes />} />
         </Route>
-
-        {/* Route without Layout */}
-        <Route path="/projectDetailes" element={<ProjectDetailes />} />
       </Routes>
     </BrowserRouter>
   );

@@ -9,18 +9,21 @@ import Frequently from "../Components/Frequently";
 import Description from "../Components/Description";
 import Plus from "../assets/images/Plus.png";
 import minus from "../assets/images/minus.png";
+import Map from "../Components/Map";
 function ContactPage() {
   return (
     <>
+    <div className="animate-on-scroll">
       <BackgroundSection
         bgImage={ContactBg}
         text="We Would Be Happy To Meet You And Learn All About Your Business"
         title="Contact Us Today!"
         textColor="#ffffff"
       />
+      </div>
 
       {/* Contact Info Section */}
-      <div className="container mx-auto py-16 px-4 grid gap-8 md:grid-cols-3">
+      <div className="container mx-auto py-16 px-4 grid gap-8 md:grid-cols-3 animate-on-scroll">
         {/* Address Card */}
         <div className="bg-[#ffffff] rounded-xl shadow-md p-8 text-center space-y-4">
           <div className="flex justify-center">
@@ -57,8 +60,13 @@ function ContactPage() {
           </p>
         </div>
       </div>
+      <div className="animate-on-scroll">
       <ContactUs/>
-      <div className="bg-[#ffffff]">
+      </div>
+      <div className="animate-on-scroll">
+      <Map/>
+      </div>
+      <div className="bg-[#ffffff] animate-on-scroll">
   <Description title="Frequently asked questions" />
   <div className="px-6 container mt-16 md:mt-28">
     {/* FAQ items */}

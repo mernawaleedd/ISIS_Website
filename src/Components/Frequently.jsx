@@ -17,7 +17,7 @@ const Frequently = ({
     };
 
     return (
-        <div className={`p-4 rounded-2xl transition-all duration-300 ${isOpen ? 'bg-[#24698F]' : bgColor}`}>
+        <div className={`p-4 rounded-2xl transition-all duration-300 animate-on-scroll ${isOpen ? 'bg-[#24698F]' : bgColor}`}>
             <div className="flex items-center justify-between">
                 <div className="flex-1">
                     <p className={`text-base mt-3 font-semibold transition-all mb-4 duration-300 ${isOpen ? 'text-[#FBFBFB]' : 'text-[#0E2F40]'}`}>

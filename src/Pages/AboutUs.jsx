@@ -88,8 +88,10 @@ function AboutUs() {
   ];
   return (
     <>
+    <div className="animate-on-scroll">
       <BackgroundSection bgImage={AboutUsbg} text="I Help You develop software solution for your business" title="About I.S.I.S?"  />
-      <div className="container mx-auto px-4">
+      </div>
+      <div className="container mx-auto px-4 animate-on-scroll">
         <div className="my-32">
           <Description
             title="We build robust software solutions with highly creative and dedicated offshore teams!"
@@ -104,22 +106,29 @@ function AboutUs() {
             description="Our expertise spans multiple departments, including Frontend Development, Backend Development, AI Development, Sales, IT & Cybersecurity, Digital Product Design (UI/UX), and Technical Support. This well-rounded structure allows us to develop scalable, secure, and high-performance applications that drive efficiency and innovation across industries."
           />
         </div>
+        <div className="animate-on-scroll">
         <AboutImageSection 
         title="Our Mission" 
         description="To be a global leader in AI-powered industrial solutions, transforming businesses with smart, secure, and efficient digital technologies." 
         image={About2}
         reverse={true} 
       />
+      </div>
+      <div className="animate-on-scroll">
         <AboutImageSection 
         title="Our Vision" 
         description="We empower businesses with intelligent, data-driven solutions that enhance efficiency, reduce costs, and improve operational performance. By integrating AI, automation, and cybersecurity, we create cutting-edge systems that help industries succeed in an evolving digital world." 
         image={About1} 
       />
-        <AboutImageSection image1={About1} image2={About2} />
       </div>
-
+      <div className="animate-on-scroll">
+        <AboutImageSection image1={About1} image2={About2} />
+        </div>
+      </div>
+      <div className="animate-on-scroll">
       <WhyChooseUs />
-      <section className="container mx-auto px-4 my-28">
+      </div>
+      <section className="container mx-auto px-4 my-28 animate-on-scroll">
         <Description title="I.S.I.S Values" />
         <div className="flex flex-wrap justify-center gap-8 mt-16">
           {cards.map((card, index) => (
@@ -132,7 +141,7 @@ function AboutUs() {
           ))}
         </div>
       </section>
-      <div className="bg-[#F6F6F6]">
+      <div className="bg-[#F6F6F6] animate-on-scroll">
   <div className="container mx-auto p-6 md:p-16 lg:p-28">
     <Description title="People are the key to success" />
     <div className="flex flex-col gap-12 mt-16 p-3">
@@ -176,7 +185,7 @@ function AboutUs() {
 
   <div className="bg-[#ffffff] py-32 p-6">
     <Description title="Technology and tools used in I.S.I.S projects" />
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 container mx-auto p-6">
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-5 container mx-auto p-6 animate-on-scroll">
   {tools.map((tool, index) => (
     <img
       key={index}
@@ -191,9 +200,9 @@ function AboutUs() {
   </div>
 </div>
 
-<div className="bg-[#ffffff]">
+<div className="bg-[#ffffff] animate-on-scroll">
   <Description title="Frequently asked questions" />
-  <div className="px-6 container mt-16 md:mt-28">
+  <div className="px-6 container mt-16 md:mt-28 animate-on-scroll">
     {/* FAQ items */}
     <div className="m-3">
       <Frequently

@@ -11,8 +11,10 @@ import ContactForm from "../Components/ContactUs";
 export default function Services() {
     return (
         <>
+            <div className="animate-on-scroll">
             <BackgroundSection bgImage={ServicesBg} text="Supporting your project at each stage; from initial discovery, design and development to post-production support and maintenance" title="Our Services" />
-            <div className="bg-[#ffffff] py-16">
+            </div>
+            <div className="bg-[#ffffff] py-16 animate-on-scroll">
                 <div className="container">
                     <AboutImageSection
                         title="Software Development"
@@ -43,7 +45,7 @@ export default function Services() {
                 </div>
             </div>
             {/* Artificial Intelligence section */}
-            <div className="bg-[#F6F6F6] py-16">
+            <div className="bg-[#F6F6F6] py-16 animate-on-scroll">
                 <div className="container">
                     <AboutImageSection
                         title="Artificial Intelligence "
@@ -115,7 +117,7 @@ AI Integration with Existing Systems"
                 </div>
             </div>
             {/* Digital Product Design section */}
-            <div className="bg-[#ffffff] py-16">
+            <div className="bg-[#ffffff] py-16 animate-on-scroll">
                 <div className="container">
                     <AboutImageSection
                         title="Digital Product Design "
@@ -146,7 +148,7 @@ AI Integration with Existing Systems"
                 </div>
             </div>
             {/* Cloud Solutions & System Integration */}
-            <div className="bg-[#F6F6F6] py-16">
+            <div className="bg-[#F6F6F6] py-16 animate-on-scroll">
                 <div className="container">
                     <AboutImageSection
                         title="Cloud Solutions & System Integration "
@@ -180,7 +182,7 @@ AI Integration with Existing Systems"
                 </div>
             </div>
             {/* Project Support */}
-            <div className="bg-[#ffffff] py-16">
+            <div className="bg-[#ffffff] py-16 animate-on-scroll">
                 <div className="container">
                     <AboutImageSection
                         title="Project Support "
@@ -202,7 +204,9 @@ AI Integration with Existing Systems"
                     </div>
                 </div>
             </div>
+            <div className="animate-on-scroll">
                <ContactForm/>
+               </div>
         </>
     )
 };
