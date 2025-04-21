@@ -25,7 +25,7 @@ function ContactPage() {
       {/* Contact Info Section */}
       <div className="container mx-auto py-16 px-4 grid gap-8 md:grid-cols-3 animate-on-scroll">
         {/* Address Card */}
-        <div className="bg-[#ffffff] rounded-xl shadow-md p-8 text-center space-y-4">
+        <div id="alexandria" className="bg-[#ffffff] rounded-xl shadow-md p-8 text-center space-y-4">
           <div className="flex justify-center">
           <img src={MapPin} alt="MapPin" className="bg-[#24698F] rounded-full p-2" />
           </div>
@@ -37,7 +37,7 @@ function ContactPage() {
         </div>
 
         {/* Call Us Card */}
-        <div className="bg-[#ffffff] rounded-3xl shadow-md p-8 text-center space-y-4">
+        <div id="phone" className="bg-[#ffffff] rounded-3xl shadow-md p-8 text-center space-y-4">
           <div className="flex justify-center">
             <img src={PhoneCall} alt="PhoneCall" className="bg-[#24698F] rounded-full p-2" />
           </div>
@@ -49,7 +49,7 @@ function ContactPage() {
         </div>
 
         {/* Mail Card */}
-        <div className="bg-[#ffffff] rounded-xl shadow-md p-8 text-center space-y-4">
+        <div id="email" className="bg-[#ffffff] rounded-xl shadow-md p-8 text-center space-y-4">
           <div className="flex justify-center">
           <img src={Envelope} alt="Envelope" className="bg-[#24698F] rounded-full p-2" />
           </div>
@@ -63,7 +63,7 @@ function ContactPage() {
       <div className="animate-on-scroll">
       <ContactUs/>
       </div>
-      <div className="animate-on-scroll">
+      <div id="damietta" className="animate-on-scroll">
       <Map/>
       </div>
       <div className="bg-[#ffffff] animate-on-scroll">

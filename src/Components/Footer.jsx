@@ -66,26 +66,28 @@ const Footer = () => {
 
         {/* Services */}
         <div>
-          <h3 className="font-semibold mb-4 text-[#0E2F40]">Services</h3>
-          <ul className="space-y-2 text-[#5E5E5E]">
-            <li className='py-1'>Software Development</li>
-            <li className='py-1'>Artificial Intelligence</li>
-            <li className='py-1'>Digital Product Design</li>
-            <li className='py-1'>Cloud Solutions & System Integration</li>
-            <li className='py-1'>Project Support</li>
-          </ul>
-        </div>
+  <h3 className="font-semibold mb-4 text-[#0E2F40]">Services</h3>
+  <ul className="space-y-2 text-[#5E5E5E]">
+    <a href="#software-development"><li className='py-1 cursor-pointer hover:text-[#24698F] transition'>Software Development</li></a>
+    <a href="#artificial-intelligence"><li className='py-1 cursor-pointer hover:text-[#24698F] transition'>Artificial Intelligence</li></a>
+    <a href="#digital-product-design"><li className='py-1 cursor-pointer hover:text-[#24698F] transition'>Digital Product Design</li></a>
+    <a href="#cloud-solutions"><li className='py-1 cursor-pointer hover:text-[#24698F] transition'>Cloud Solutions & System Integration</li></a>
+    <a href="#project-support"><li className='py-1 cursor-pointer hover:text-[#24698F] transition'>Project Support</li></a>
+  </ul>
+</div>
 
-        {/* Contact Us */}
-        <div>
-          <h3 className="font-semibold mb-4 text-[#0E2F40]">Contact Us</h3>
-          <ul className="space-y-2 text-[#5E5E5E]">
-            <li className='py-1'>Damietta - Nafie St next to Al Mazloum Mosque</li>
-            <li className='py-1'>Alexandria - Al Dakhila, Al Gaesh st</li>
-            <li className='py-1'>057 2288844</li>
-            <li className='py-1'>Isis@Mail.Isis-Eg.Com</li>
-          </ul>
-        </div>
+
+ {/* Contact Us */}
+<div>
+  <h3 className="font-semibold mb-4 text-[#0E2F40]">Contact Us</h3>
+  <ul className="space-y-2 text-[#5E5E5E]">
+    <a href="#damietta"><li className='py-1 cursor-pointer hover:text-[#24698F] transition'>Damietta - Nafie St next to Al Mazloum Mosque</li></a>
+    <a href="#alexandria"><li className='py-1 cursor-pointer hover:text-[#24698F] transition'>Alexandria - Al Dakhila, Al Gaesh st</li></a>
+    <a href="#phone"><li className='py-1 cursor-pointer hover:text-[#24698F] transition'>057 2288844</li></a>
+    <a href="#email"><li className='py-1 cursor-pointer hover:text-[#24698F] transition'>Isis@Mail.Isis-Eg.Com</li></a>
+  </ul>
+</div>
+
       </div>
 
       {/* Social icons */}
