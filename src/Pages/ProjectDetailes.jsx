@@ -74,7 +74,7 @@ const ProjectDetailes = () => {
                     </div>
 
                     {/* Services */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 py-4 border-b animate-on-scroll">
+                    <div className="grid grid-cols-1 md:grid-cols-2 py-4  animate-on-scroll">
                         <div className="font-semibold text-left">Services</div>
                         <div className="flex flex-wrap gap-2 justify-end text-right">
                             {[

@@ -46,7 +46,7 @@ const Services = () => {
                 {services.map((service, index) => (
                     <div key={index} className="bg-[#F6F6F6] p-6 rounded-[40px] shadow-sm text-center w-full md:w-2/3 lg:w-1/2">
                         <img src={service.icon} alt={service.title} className="w-16 h-16 mb-4 mx-auto" />
-                        <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
+                        <h3 className="text-xl font-semibold mb-5">{service.title}</h3>
                         <p className="text-gray-600">{service.description}</p>
                     </div>
                 ))}

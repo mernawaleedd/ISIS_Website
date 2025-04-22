@@ -66,7 +66,7 @@ function ContactPage() {
       <div id="damietta" className="animate-on-scroll">
       <Map/>
       </div>
-      <div className="bg-[#ffffff] animate-on-scroll">
+      <div className="bg-[#ffffff] animate-on-scroll py-32">
   <Description title="Frequently asked questions" />
   <div className="px-6 container mt-16 md:mt-28">
     {/* FAQ items */}
