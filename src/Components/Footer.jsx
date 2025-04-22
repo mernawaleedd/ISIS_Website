@@ -93,12 +93,12 @@ const Footer = () => {
       {/* Social icons */}
       <div className="flex justify-end mb-4">
         <div className="flex space-x-4">
-          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/profile.php?id=61574656877733" target="_blank" rel="noopener noreferrer">
             <div className="w-12 hover:transition-transform duration-500 transform hover:scale-110">
             <img src={facebook} alt="facebook" />
             </div>
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/company/i-s-i-s/posts/?feedView=all&viewAsMember=true" target="_blank" rel="noopener noreferrer">
             <div className="w-12 hover:transition-transform duration-300 transform hover:scale-110">
               <img src={linkedIn} alt="linkedIn" />
             </div>

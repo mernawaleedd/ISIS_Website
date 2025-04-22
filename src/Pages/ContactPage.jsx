@@ -43,8 +43,8 @@ function ContactPage() {
           </div>
           <h3 className="text-2xl font-bold text-[##0E2F40]">Call Us</h3>
           <p className="text-[#5E5E5E]">
-            <p className="p-2">057 230 689 44</p>
-           <p className="p-2">0122 2222222</p>
+            <p className="p-2">057 22 888 44</p>
+           <p className="p-2">0155 572 0405</p>
           </p>
         </div>
 
@@ -55,8 +55,8 @@ function ContactPage() {
           </div>
           <h3 className="text-2xl font-bold text-[#0E2F40]">Mail</h3>
           <p className="text-[#5E5E5E]">
-            <p className="p-2">isis@mail.isis-eg.com</p>
-           <p className="p-2">isis@mail.isis-eg.com</p>
+            <p className="p-2">info@mail.isis-eg.com</p>
+           <p className="p-2">sales@mail.isis-eg.com</p>
           </p>
         </div>
       </div>
