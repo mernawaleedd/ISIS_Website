@@ -15,31 +15,6 @@ const ProjectDetailes = () => {
             logo: MedLogo,
             image: MED,
         },
-        {
-            description: "MED - Mechanical And Electrical Department",
-            logo: MedLogo,
-            image: MED,
-        },
-        {
-            description: "MED - Mechanical And Electrical Department",
-            logo: MedLogo,
-            image: MED,
-        },
-        {
-            description: "MED - Mechanical And Electrical Department",
-            logo: MedLogo,
-            image: MED,
-        },
-        {
-            description: "MED - Mechanical And Electrical Department",
-            logo: MedLogo,
-            image: MED,
-        },
-        {
-            description: "MED - Mechanical And Electrical Department",
-            logo: MedLogo,
-            image: MED,
-        },
     ];
     return (
         <>

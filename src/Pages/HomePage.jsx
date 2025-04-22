@@ -13,6 +13,7 @@ import MedLogo from "../assets/images/MedLogo.png";
 import Description from "../Components/Description";
 import Button from "../Components/MainButton";
 import Arrow from "../assets/images/arrow.png";
+import WhiteArrow from "../assets/images/WhiteArrow.png";
 import { NavLink,useNavigate } from "react-router-dom";
 export default function Home(){
   const navigate = useNavigate();
@@ -39,10 +40,14 @@ export default function Home(){
     </div>
     <div className="animate-on-scroll">
     <Services/>
-    <button  onClick={ServicesDetailes} className=" mx-auto px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 bg-[#ffffff] text-[#24698F] shadow-lg rounded-3xl hover:bg-[#F6F6F6] transition mt-16 flex items-center justify-center w-max">
-        Learn More
-        <img src={Arrow} alt="arrow" className="inline-block ml-2" />
-      </button>
+    <NavLink
+  to="/Services"
+  className="mx-auto px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 bg-[#ffffff] text-[#24698F] shadow-lg rounded-3xl hover:bg-[#F6F6F6] transition mt-16 flex items-center justify-center w-max"
+>
+  Learn More
+  <img src={Arrow} alt="arrow" className="inline-block ml-2" />
+</NavLink>
+
     </div>
     <div className="py-32 animate-on-scroll">
     <Description title="Projects" description="We consistently deliver cutting-edge software solutions that drive innovation, streamline operations, and elevate user experiences."/>
@@ -57,7 +62,13 @@ export default function Home(){
             ))}
           </div>
           <div className="flex justify-center m-auto py-16">
-            <Button label="View More"  onClick={ProjectsDetailes}/>
+          <NavLink
+      to="/Projects"
+      className="px-9 py-4 bg-[#24698F] text-white rounded-full hover:bg-[#1d5a78] transition"
+    >
+       View All
+       <img src={WhiteArrow} alt="arrow" className="inline-block ml-2" />
+    </NavLink>
             </div>
           </div>
           <div className="animate-on-scroll">
