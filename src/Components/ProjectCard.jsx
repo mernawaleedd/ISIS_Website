@@ -15,12 +15,13 @@ const ProjectCard = ({ image, description, logo }) => {
         {logo && <img src={logo} alt="Logo" className="w-32 h-32 object-contain" />}
         <p className="text-lg font-semibold text-[#0E2F40] mb-4">{description}</p>
         <h3 className="p-3 text-[#24698F]">Web</h3>
-        <button 
-          onClick={handleClick}
-          className="bg-[#F6F6F6] hover:bg-[#969292] text-[#5E5E5E] font-semibold py-2 px-6 rounded-full transition"
-        >
-          Learn More
-        </button>
+      <button 
+  onClick={handleClick}
+  className="bg-[#F6F6F6] hover:bg-[#969292] text-[#5E5E5E] font-semibold py-2 px-6 rounded-full transition self-end"
+>
+  Learn More
+</button>
+
       </div>
     </div>
   );

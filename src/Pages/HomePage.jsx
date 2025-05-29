@@ -42,10 +42,11 @@ export default function Home(){
     <Services/>
     <NavLink
   to="/Services"
-  className="mx-auto px-4 py-2 md:px-6 md:py-3 lg:px-8 lg:py-4 bg-[#ffffff] text-[#24698F] shadow-lg rounded-3xl hover:bg-[#F6F6F6] transition mt-16 flex items-center justify-center w-max"
+
 >
-  Learn More
-  <img src={Arrow} alt="arrow" className="inline-block ml-2" />
+   <div className="flex justify-center mt-10">
+        <Button label="Learn More" />
+      </div>
 </NavLink>
 
     </div>
@@ -64,10 +65,10 @@ export default function Home(){
           <div className="flex justify-center m-auto py-16">
           <NavLink
       to="/Projects"
-      className="px-9 py-4 bg-[#24698F] text-white rounded-full hover:bg-[#1d5a78] transition"
-    >
-       View All
-       <img src={WhiteArrow} alt="arrow" className="inline-block ml-2" />
+       >
+         <div className="flex justify-center mt-10">
+        <Button label="View All" />
+      </div>
     </NavLink>
             </div>
           </div>

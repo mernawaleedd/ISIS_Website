@@ -101,66 +101,82 @@ const Navbar = () => {
       Contact Us
     </button>
 
-      {isMenuOpen && (
-        <ul className="absolute top-full left-0 w-full bg-white flex flex-col items-center py-4 shadow-md md:hidden">
-          <li>
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                `py-2 cursor-pointer text-[#0E2F40] transition ${isActive ? "text-[#24698F]" : "hover:text-[#24698F]"}`
-              }
-            >
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/about"
-              className={({ isActive }) =>
-                `py-2 cursor-pointer text-[#0E2F40] transition ${isActive ? "text-[#24698F]" : "hover:text-[#24698F]"}`
-              }
-            >
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/services"
-              className={({ isActive }) =>
-                `py-2 cursor-pointer text-[#0E2F40] transition ${isActive ? "text-[#24698F]" : "hover:text-[#24698F]"}`
-              }
-            >
-              Services
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/projects"
-              className={({ isActive }) =>
-                `py-2 cursor-pointer text-[#0E2F40] transition ${isActive ? "text-[#24698F]" : "hover:text-[#24698F]"}`
-              }
-            >
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              to="/news"
-              className={({ isActive }) =>
-                `py-2 cursor-pointer text-[#0E2F40] transition ${isActive ? "text-[#24698F]" : "hover:text-[#24698F]"}`
-              }
-            >
-              News
-            </NavLink>
-          </li>
-          <button
-      onClick={handleClick}
-      className="hidden md:block px-4 py-2 bg-[#24698f] text-white rounded-3xl hover:bg-[#0E2F40] transition"
-    >
-      Contact Us
-    </button>
-        </ul>
-      )}
+{isMenuOpen && (
+  <div className="absolute top-full left-0 w-full bg-white py-6 shadow-md md:hidden">
+    <ul className="flex flex-col items-center space-y-4">
+      <li>
+        <NavLink
+          to="/"
+          onClick={() => setIsMenuOpen(false)}
+          className={({ isActive }) =>
+            `cursor-pointer text-[#0E2F40] transition ${
+              isActive ? "text-[#24698F]" : "hover:text-[#24698F]"}`
+          }
+        >
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/about"
+          onClick={() => setIsMenuOpen(false)}
+          className={({ isActive }) =>
+            `cursor-pointer text-[#0E2F40] transition ${
+              isActive ? "text-[#24698F]" : "hover:text-[#24698F]"}`
+          }
+        >
+          About
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/services"
+          onClick={() => setIsMenuOpen(false)}
+          className={({ isActive }) =>
+            `cursor-pointer text-[#0E2F40] transition ${
+              isActive ? "text-[#24698F]" : "hover:text-[#24698F]"}`
+          }
+        >
+          Services
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/projects"
+          onClick={() => setIsMenuOpen(false)}
+          className={({ isActive }) =>
+            `cursor-pointer text-[#0E2F40] transition ${
+              isActive ? "text-[#24698F]" : "hover:text-[#24698F]"}`
+          }
+        >
+          Projects
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/news"
+          onClick={() => setIsMenuOpen(false)}
+          className={({ isActive }) =>
+            `cursor-pointer text-[#0E2F40] transition ${
+              isActive ? "text-[#24698F]" : "hover:text-[#24698F]"}`
+          }
+        >
+          News
+        </NavLink>
+      </li>
+    </ul>
+    <div className="mt-4 flex justify-center">
+      <button
+        onClick={handleClick}
+        className="px-4 py-2 bg-[#24698f] text-white rounded-3xl hover:bg-[#0E2F40] transition"
+      >
+        Contact Us
+      </button>
+    </div>
+  </div>
+)}
+
+
     </nav>
   );
 };

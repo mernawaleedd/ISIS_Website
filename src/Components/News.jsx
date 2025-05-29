@@ -47,7 +47,6 @@ const News = () => {
     </div>
   </div>
 </div>
-
       <div className='container'>
         <h3 className="text-lg font-semibold mb-4 text-[#5E5E5E]">All News</h3>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
@@ -55,7 +54,7 @@ const News = () => {
             <div key={index} className="bg-[#ffffff] p-4 rounded-3xl shadow-md mb-32">
               <img src={news.image} alt="News" className="w-[full] h-60 object-cover rounded-3xl m-0" />
               <h4 className="text-[#5E5E5E] font-semibold mb-2 pt-14">{news.date}</h4>
-              <p className="text-base font-medium pb-14 text-[#0E2F40] leading-[1.75]">{news.title}</p>
+              <p className="text-base font-medium pb-4 text-[#0E2F40] leading-[1.75]">{news.title}</p>
             </div>
           ))} 
         </div>
